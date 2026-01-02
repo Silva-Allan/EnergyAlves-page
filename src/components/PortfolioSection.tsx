@@ -21,12 +21,16 @@ export const PortfolioSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {portfolioItems.map((item, i) => (
             <div key={i} className="bg-background rounded-lg border border-border overflow-hidden hover:border-primary/50 transition-colors group">
-              <div className="aspect-square bg-muted relative overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
+              <div className="aspect-square bg-muted relative overflow-hidden flex items-center justify-center">
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                ) : (
+                  <Zap className="w-14 h-14 text-primary/20" />
+                )}
               </div>
               <div className="p-3">
                 <span className="text-primary text-xs font-medium">{item.category}</span>
