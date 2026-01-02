@@ -12,9 +12,9 @@ Nosso diferencial está na responsabilidade: somos uma empresa registrada que pr
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { value: "10+", label: "Anos" },
-            { value: "500+", label: "Clientes" },
-            { value: "1000+", label: "Projetos" },
+            { value: "5+", label: "Anos" },
+            { value: "600+", label: "Clientes" },
+            { value: "100+", label: "Projetos" },
             { value: "100%", label: "Segurança" },
           ].map((stat, i) => (
             <div key={i} className="bg-background p-4 rounded-lg border border-border">

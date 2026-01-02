@@ -7,7 +7,7 @@ export const HeroSection = () => {
         </h1>
 
         <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-          Instalações e manutenções elétricas residenciais e comerciais em Chapecó/SC.
+          Instalações e manutenções elétricas residenciais e comerciais em Chapecó e região.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
